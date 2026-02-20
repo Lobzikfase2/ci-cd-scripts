@@ -51,8 +51,8 @@ get_ssh_port() {
 
 
 # Настраиваем ufw
-configure_ufw_ssh_only() {
-    log "Настройка UFW (открытие лишь текущего ssh порта)"
+configure_ufw() {
+    log "Настройка UFW (порты ssh, 80, 443 - TCP)"
     ssh_port=$(get_ssh_port)
     sudo ufw --force disable
     sudo ufw --force reset
