@@ -29,7 +29,7 @@ log() {
 
 # Функция для получения информации о пользователе, который запустил скрипт
 set_user_info() {
-    if [ -n "$SUDO_USER" ]; then
+    if [ -n "${SUDO_USER:-}" ]; then
         # Запущено через sudo
         USER_NAME="$SUDO_USER"
         USER_HOME=$(eval echo ~$SUDO_USER)
