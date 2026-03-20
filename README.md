@@ -18,7 +18,7 @@ sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Lobzikfase2/ci-cd-sc
 
 ## ⚙️ Тюнинг ядра (sysctl)
 ```bash
-sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Lobzikfase2/ci-cd-scripts/main/base.sh) && configure_ufw"
+sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Lobzikfase2/ci-cd-scripts/main/base.sh) && configure_sysctl"
 ```
 
 ---
